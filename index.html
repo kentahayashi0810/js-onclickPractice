@@ -9,76 +9,165 @@
   </head>
   <body>
     <div class="inner">
-      <h2 class="addition-title">Let's do one-digit addition!</h2>
-      <input type="number" name="number" value="0" id="input" />
-      <div class="container1">
+      <!-- Single Digit Calculator -->
+      <div class="singleDigitCalculator">
+        <h2 class="addition-title">Let's do one-digit addition!</h2>
+        <input type="number" name="number" value="0" id="input" />
+        <div class="container">
+          <input
+            type="button"
+            value="1"
+            class="button -item1"
+            onclick="showValue(this)"
+          />
+          <input
+            type="button"
+            value="2"
+            class="button -item2"
+            onclick="showValue(this)"
+          />
+          <input
+            type="button"
+            value="3"
+            class="button -item3"
+            onclick="showValue(this)"
+          />
+          <input
+            type="button"
+            value="4"
+            class="button -item4"
+            onclick="showValue(this)"
+          />
+          <input
+            type="button"
+            value="5"
+            class="button -item5"
+            onclick="showValue(this)"
+          />
+          <input
+            type="button"
+            value="6"
+            class="button -item6"
+            onclick="showValue(this)"
+          />
+          <input
+            type="button"
+            value="7"
+            class="button -item7"
+            onclick="showValue(this)"
+          />
+          <input
+            type="button"
+            value="8"
+            class="button -item8"
+            onclick="showValue(this)"
+          />
+          <input
+            type="button"
+            value="9"
+            class="button -item9"
+            onclick="showValue(this)"
+          />
+          <input
+            type="button"
+            value="0"
+            class="button -item0"
+            onclick="showValue(this)"
+          />
+        </div>
         <input
           type="button"
-          value="1"
-          class="button -item1"
-          onclick="showValue(this)"
-        />
-        <input
-          type="button"
-          value="2"
-          class="button -item2"
-          onclick="showValue(this)"
-        />
-        <input
-          type="button"
-          value="3"
-          class="button -item3"
-          onclick="showValue(this)"
-        />
-        <input
-          type="button"
-          value="4"
-          class="button -item4"
-          onclick="showValue(this)"
-        />
-        <input
-          type="button"
-          value="5"
-          class="button -item5"
-          onclick="showValue(this)"
-        />
-        <input
-          type="button"
-          value="6"
-          class="button -item6"
-          onclick="showValue(this)"
-        />
-        <input
-          type="button"
-          value="7"
-          class="button -item7"
-          onclick="showValue(this)"
-        />
-        <input
-          type="button"
-          value="8"
-          class="button -item8"
-          onclick="showValue(this)"
-        />
-        <input
-          type="button"
-          value="9"
-          class="button -item9"
-          onclick="showValue(this)"
-        />
-        <input
-          type="button"
-          value="0"
-          class="button -item0"
-          onclick="showValue(this)"
+          value="Clear"
+          class="button -clear"
+          onclick="clearValue()"
         />
       </div>
-      <input
-        type="button"
-        value="Clear"
-        class="button -clear"
-        onclick="clearValue()"
-      />
+
+      <!-- Double Digit Calculator -->
+      <div class="singleDigitCalculator">
+        <h2 class="addition-title">Let's do double-digit addition!</h2>
+        <input type="number" name="number" value="0" id="input2" />
+        <div class="container">
+          <input
+            type="button"
+            value="1"
+            class="button -item1"
+            onclick="add(this)"
+          />
+          <input
+            type="button"
+            value="2"
+            class="button -item2"
+            onclick="add(this)"
+          />
+          <input
+            type="button"
+            value="3"
+            class="button -item3"
+            onclick="add(this)"
+          />
+          <input
+            type="button"
+            value="4"
+            class="button -item4"
+            onclick="add(this)"
+          />
+          <input
+            type="button"
+            value="5"
+            class="button -item5"
+            onclick="add(this)"
+          />
+          <input
+            type="button"
+            value="6"
+            class="button -item6"
+            onclick="add(this)"
+          />
+          <input
+            type="button"
+            value="7"
+            class="button -item7"
+            onclick="add(this)"
+          />
+          <input
+            type="button"
+            value="8"
+            class="button -item8"
+            onclick="add(this)"
+          />
+          <input
+            type="button"
+            value="9"
+            class="button -item9"
+            onclick="add(this)"
+          />
+          <input
+            type="button"
+            value="0"
+            class="button -item0"
+            onclick="add(this)"
+          />
+        </div>
+        <input
+          type="button"
+          value="Add"
+          class="button -add"
+          onclick="addValue()"
+        />
+        <input
+          type="button"
+          value="equal"
+          class="button -equal"
+          onclick="calculate()"
+        />
+        <input
+          type="button"
+          value="Clear"
+          class="button -clear"
+          onclick="clearValue()"
+        />
+      </div>
     </div>
     <!-- JS Files -->
     <script src="app.js"></script>
